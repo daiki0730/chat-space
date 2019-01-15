@@ -1,2 +1,8 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+.chat
+  .chat__side
+    = render partical: "chat__side__top"
+    = render partical: "chat__side__glist"
+  .chat__main
+    = render partical: "chat__main__header"
+    = render partical: "chat__main__message"
+    = render partical: "chat__main__footer"
