@@ -1,8 +1,9 @@
 .chat_main {
-
+  box-sizing: border-box;
 }
 
 .chat__main__header {
+  box-sizing: border-box;
   &__edit-button {
 
   }
@@ -15,6 +16,7 @@
 }
 
 .main__message {
+  box-sizing: border-box;
   &__top {
 
     &__name {
@@ -30,6 +32,7 @@
 }
 
 .main__footer {
+  box-sizing: border-box;
 
   &__text {
 
