@@ -1,20 +1,31 @@
 .chat_main {
 
-.chat__main__header{
-  &__edit-button{
+.chat__main__header {
+  &__edit-button {
 
   }
-  &__gname{
+  &__gname {
 
   }
-  &__member{
+  &__member {
 
   }
 }
 
-.main__message{
+.main__message {
+  &__top {
 
+    &__name {
+
+    }
+    &__submit-date-time {
+
+    }
+    &__text {
+
+    }
   }
+}
 
 .main__footer {
 
