@@ -12,6 +12,9 @@
     padding-top: 35px;
     padding-bottom: 20px;
     display: flex;
+    &__icon {
+      margin-left: auto;
+    }
   }
 
   &__glist {
