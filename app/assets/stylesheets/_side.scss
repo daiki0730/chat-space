@@ -1,9 +1,9 @@
 .chat__side {
+      width: 300px;
 
   &__top {
     box-sizing: border-box;
     background-color: #253141;
-    width: 300px;
     height: 90px;
     color: white;
     font-size: 16px;
@@ -23,7 +23,6 @@
   &__glist {
     box-sizing: border-box;
     background-color: #2f3e51;
-    width: 300px;
     height: calc(100vh - 90px);
     color: white;
     padding-right: 20px;
