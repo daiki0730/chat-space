@@ -40,16 +40,19 @@
 .main__message {
   box-sizing: border-box;
   background-color: #AAAAAA;
-   height: calc(100vh - 245px);
+  height: calc(100vh - 245px);
+
   &__top {
     padding-top: 46px;
     padding-left: 40px;
-    &__name {
 
+    &__name {
     }
+
     &__submit-date-time {
 
     }
+
     &__text {
 
     }
