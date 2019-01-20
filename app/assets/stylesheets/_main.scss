@@ -9,6 +9,7 @@
   box-sizing: border-box;
   height:15%;
   border: 1px solid #eeeeee;
+  padding: 0 40px;
 
   &__edit-button {
     font-size: 15px;
@@ -21,7 +22,7 @@
   &__gname {
     color: #333333;
     font-size: 20px;
-    margin: 40px 0 15px;
+    padding: 40px 0 15px;
     float: left;
     clear: both;
     display: block;
@@ -30,7 +31,6 @@
   &__member {
   color: #999999;
   font-size: 12px;
-  margin: 0 40px;
   clear: both;
   display: block;
   }
