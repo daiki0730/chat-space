@@ -41,6 +41,7 @@
   box-sizing: border-box;
   background-color: #AAAAAA;
   height: calc(100vh - 245px);
+  overflow-y: scroll;
 
   &__top {
     padding-top: 46px;
