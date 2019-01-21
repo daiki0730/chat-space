@@ -70,15 +70,15 @@
 }
 
 .main__footer {
+  background-color: #f5f5f5;
   box-sizing: border-box;
   height: 90px;
   padding-top: 20px;
   padding-left: 10px;
-  padding-bottom: 20px;
   display: flex;
+  bottom: 0;
   &__text {
     color: #434A54;
-    folat: left;
   }
   &__send-button {
     background-color: #38AEF0;
