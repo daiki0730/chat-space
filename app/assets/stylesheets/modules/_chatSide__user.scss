@@ -5,7 +5,13 @@
     position: relative;
 
     &--content {
-
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
 
         &--name {
         }
