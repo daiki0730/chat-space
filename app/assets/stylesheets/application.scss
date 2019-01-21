@@ -7,3 +7,8 @@
 @import "modules/chatMain__body";
 @import "modules/chatMain__footer";
 
+.chatSide {
+    height: 100vh;
+    width: 300px;
+    float: left;
+}
