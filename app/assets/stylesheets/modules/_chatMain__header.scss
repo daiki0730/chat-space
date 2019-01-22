@@ -3,6 +3,7 @@
 
      &--group {
         @include clearfix();
+        margin: 0 40px;
 
          &--name {
             font-size: 20px;
@@ -12,12 +13,11 @@
 
          &--editButton {
             font-size: 15px;
-
          }
      }
 
      &--members {
         font-size: 12px;
-
+        margin: 0 40px;
      }
  }
