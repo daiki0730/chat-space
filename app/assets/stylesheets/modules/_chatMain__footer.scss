@@ -1,6 +1,7 @@
 .chatMain__footer {
     height: 90px;
     width: 100%;
+    background-color: $gray-back;
 
     &--newMessage {
         margin: 0 40px;
@@ -18,5 +19,7 @@
     }
 
     &--submit {
+        color: white;
+        background-color: $blue;
     }
 }
