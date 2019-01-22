@@ -1,17 +1,25 @@
 .chatMain__header {
+    height: 15%;
 
      &--group {
+        content: '';
+        display: block;
+        clear: both;
 
          &--name {
+            font-size: 20px;
+            color: $black-2;
 
          }
 
          &--editButton {
+            font-size: 15px;
 
          }
      }
 
      &--members {
+        font-size: 12px;
 
      }
  }
