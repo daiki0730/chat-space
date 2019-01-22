@@ -25,3 +25,9 @@ html {
     width: calc(100vw - 300px);
     float: left;
 }
+
+.news {
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+}
