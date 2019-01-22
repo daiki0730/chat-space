@@ -23,12 +23,12 @@
 
         a {
             color: $white;
+            display: inline-block;
         }
 
         &--newGroup {
+            margin-left: 140px;
         }
 
-        &--editUser {
-        }
     }
 }
