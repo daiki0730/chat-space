@@ -1,4 +1,26 @@
 .chatMain__footer {
     height: 90px;
     width: 100%;
+
+    &--newMessage {
+
+        &--body {
+
+            #messageBody {
+
+            }
+
+            &--uploadLabel {
+
+
+                #uploadIcon {
+
+                }
+            }
+        }
+
+        &--submit {
+
+        }
+    }
 }
