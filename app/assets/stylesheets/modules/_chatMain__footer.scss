@@ -4,9 +4,10 @@
 
     &--newMessage {
         margin: 0 40px;
-        position: absolute;
+        position: relative;
 
         &--body {
+            position: relative;
 
             #messageBody {
 
