@@ -2,10 +2,19 @@
     height: 90px;
     width: 100%;
 
-     &--newMessage {
+    &--newMessage {
+        margin: 0 40px;
+        position: relative;
 
+        &--body {
+            position: relative;
 
-         &--body {
-     }
- }
+            &--uploadLabel {
+
+            }
+        }
+    }
+
+    &--submit {
+    }
 }
