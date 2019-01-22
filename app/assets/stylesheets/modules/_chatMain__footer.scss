@@ -1,6 +1,7 @@
 .chatMain__footer {
     height: 90px;
     width: 100%;
+    background-color: #999999;
 
     &--newMessage {
         margin: 0 40px;
@@ -11,6 +12,7 @@
 
             #messageBody {
                 height: 50px;
+                width: calc(100% - 140px);
                 padding-left: 10px;
                 margin: 20px 0;
             }
