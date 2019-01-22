@@ -1,2 +1,5 @@
 .chatMain__footer
   %form(class="chatMain__footer--newMessage" enctype="multipart/form-data" method="post")
+    .chatMain__footer--newMessage--body
+      %input(id="messageBody" placeholder="type a message" name="message[Body]" type="text")
+
