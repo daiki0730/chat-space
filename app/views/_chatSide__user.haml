@@ -2,7 +2,9 @@
   .chatSide__user--content
     .chatSide__user--content--name
       Daiki
-    %a.chatSide__user--content--newGroup(href="")
+    .chatSide__user--content--newGroup
+    = link_to root_path do
       %i.fa.fa-pencil-square-o
-    %a.chatSide__user--conetnt--editUser(href="")
+    .chatSide__user--conetnt--editUser
+    = link_to root_path do
       %i.fa.fa-cog
