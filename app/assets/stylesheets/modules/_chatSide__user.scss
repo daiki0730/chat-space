@@ -21,12 +21,14 @@
             display: inline-block;
         }
 
-        &--newGroup {
+        a {
+            color: $white;
+        }
 
+        &--newGroup {
         }
 
         &--editUser {
-
         }
     }
 }
