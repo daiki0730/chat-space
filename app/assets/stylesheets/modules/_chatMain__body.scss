@@ -2,12 +2,13 @@
 .chatMain__body {
 
      &--list {
-      padding-top: 46px;
+      padding-top: 26px;
       padding-left: 40px;
 
 
          &--message {
-
+          @include clearfix ();
+          padding: 20px 0;
 
              &--name {
 
