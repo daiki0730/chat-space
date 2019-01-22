@@ -10,7 +10,9 @@
             position: relative;
 
             #messageBody {
-
+                height: 50px;
+                padding-left: 10px;
+                margin: 20px 0;
             }
 
             &--uploadLabel {
