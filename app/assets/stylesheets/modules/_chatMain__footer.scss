@@ -1,7 +1,7 @@
 .chatMain__footer {
     height: 90px;
     width: 100%;
-    background-color: $gray-text;
+    background-color: $gray;
 
     &--newMessage {
         margin: 0 40px;
@@ -40,6 +40,8 @@
             top: 0;
             right: 0;
             border: none;
+            background-color: $blue;
+            color: white;
         }
     }
 }
