@@ -1,12 +1,12 @@
 @import "modules/siteColor";
 @import "reset";
 @import "font-awesome";
+@import "mixin/mixin";
 @import "modules/chatSide__user";
 @import "modules/chatSide__groups";
 @import "modules/chatMain__header";
 @import "modules/chatMain__body";
 @import "modules/chatMain__footer";
-@import "mixin/mixin";
 
 body,
 html {

@@ -2,9 +2,7 @@
     height: 15%;
 
      &--group {
-        content: '';
-        display: block;
-        clear: both;
+        @include clearfix();
 
          &--name {
             font-size: 20px;
