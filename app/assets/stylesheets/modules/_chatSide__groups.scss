@@ -1,0 +1,24 @@
+.chatSide__groups {
+    height: 85%;
+    width: 100%;
+    background-color: $navy_light;
+
+    &--content {
+    height: 100%;
+    color: $white;
+
+        &--group {
+            padding: 20px;
+
+            &--name {
+                font-size: 15px;
+                padding-bottom: 5px;
+            }
+
+            &--comment {
+                font-size: 11px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

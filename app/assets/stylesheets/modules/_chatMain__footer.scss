@@ -1,0 +1,47 @@
+.chatMain__footer {
+    height: 90px;
+    width: 100%;
+    background-color: $gray;
+
+    &--newMessage {
+        margin: 0 40px;
+        position: relative;
+
+        &--body {
+            position: relative;
+
+            #messageBody {
+                height: 50px;
+                width: calc(100% - 140px);
+                padding-left: 10px;
+                margin: 20px 0;
+                border: none;
+            }
+
+            &--uploadLabel {
+                height: 50px;
+                width: 40px;
+                margin: 32px 130px 20px 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                #uploadIcon {
+                    display: none;
+                }
+            }
+        }
+
+        &--submit {
+            height: 50px;
+            width: 100px;
+            margin: 20px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.chatSide__user {
+    height: 15%;
+    width: 100%;
+    background-color: $navy;
+    position: relative;
+
+    &--content {
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        &--name {
+            color: $white;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 20px;
+            display: inline-block;
+        }
+
+        a {
+            color: $white;
+            display: inline-block;
+        }
+
+        &--newGroup {
+            margin-left: 140px;
+            padding-right: 10px;
+        }
+    }
+}
