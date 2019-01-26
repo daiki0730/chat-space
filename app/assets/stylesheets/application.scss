@@ -3,11 +3,11 @@
 @import "mixin/mixin";
 @import "modules/siteColor";
 @import "modules/siteLayouts";
+@import "modules/user";
+@import "modules/flash";
+@import "modules/group";
 @import "modules/chatSide__user";
 @import "modules/chatSide__groups";
 @import "modules/chatMain__header";
 @import "modules/chatMain__body";
-@import "modules/chatMain__footer";
-@import "modules/user";
-@import "modules/flash";
-@import "modules/group";
+@import "modules/chatMain__footer"
