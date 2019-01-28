@@ -7,4 +7,5 @@
   .chatMain__body
     .chatMain__body--list
       =render './message'
-  =render './chatMain__footer'
+      = render @messages
+    =render './chatMain__footer'
