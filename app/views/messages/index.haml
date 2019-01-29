@@ -1,10 +1,10 @@
 .chatSide
   =render './chatSide__user'
   =render './chatSide__groups'
+
 .chatMain
   =render './chatMain__header'
   .chatMain__body
     .chatMain__body--list
-      = render './message'
-      = render @messages
-    =render './chatMain__footer'
+      =render './message'
+  =render './chatMain__footer'
