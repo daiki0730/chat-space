@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20190127140707) do
     t.index ["name"], name: "index_groups_on_name", using: :btree
   end
 
-  create_table "massages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "content"
     t.string   "image"
     t.integer  "group_id"
@@ -54,6 +54,6 @@ ActiveRecord::Schema.define(version: 20190127140707) do
 
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
-  add_foreign_key "massages", "groups"
-  add_foreign_key "massages", "users"
+  add_foreign_key "messages", "groups"
+  add_foreign_key "messages", "users"
 end
