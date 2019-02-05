@@ -16,8 +16,10 @@ class MessagesController < ApplicationController
       @messages = @group.messages.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'
       render :index
+      end
     end
   end
+
 
 private
 
@@ -28,5 +30,4 @@ private
   def set_group
     @group = Group.find(params[:group_id])
   end
-
 end
