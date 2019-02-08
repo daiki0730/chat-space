@@ -29,6 +29,9 @@ $(function () {
       var html = buildHTML(message);
       $('.chatMain__body--list').append(html)
       $('#messageBody').val('')
+      $('.chatMain__body').animate({
+        scrollTop: $('.chatMain__body')[0].scrollHeight
+      }, 1000, 'swing');
     })
       .fail(function () {
         alert('error');
