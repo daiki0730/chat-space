@@ -25,5 +25,10 @@ $(function () {
       processData: false,
       contentType: false
     })
+    .done(function (message) {
+      var html = buildHTML(message);
+      $('.chatMain__body--list').append(html)
+      $('#messageBody').val('')
+    })
   });
 });
