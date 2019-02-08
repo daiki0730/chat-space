@@ -1,4 +1,17 @@
 $(function () {
+  function buildHTML(message) {
+        var html = `<div class='chatMain__body--list--message'>
+                  <div class='chatMain__body--list--message--name'>
+                  ${message.user_name}
+                  </div>
+                  <div class='chatMain__body--list--message--time'>
+                  ${message.created_at}</div>
+                  <div class='chatMain__body--list--message--text'>
+                  <p>${message.content}</p>
+                  </div>
+                  </div>`
+    return html;
+  }
   $('.chatMain__footer--newMessage').submit(function (e) {
     e.preventDefault();
     var formData = new FormData(this);
