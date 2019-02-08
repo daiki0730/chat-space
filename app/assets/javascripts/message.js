@@ -16,9 +16,9 @@ $(function () {
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
-    console.log(url);
+    var href = window.location.href;
     $.ajax({
-      url: url,
+      url: href,
       type: "POST",
       data: formData,
       dataType: 'json',
