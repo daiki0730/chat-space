@@ -4,30 +4,21 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @messages = @group.messages.includes(:user)
-    respond_to do |format|
-      format.html {}
-      format.json {
-        if params[:id] != 'undefined'
-          @new_messages = Message.where('id > ? and group_id = ?', params[:id],params[:group_id])
-        end
-      }
-    end
   end
 
   def create
     @message = @group.messages.new(message_params)
     if @message.save
       respond_to do |format|
-      format.html{redirect_to group_messages_path(@group), notice: 'メッセージが送信されました'}
-      format.json {}
+        format.html { redirect_to group_messages_path(@group), notice: 'メッセージが送信されました'  }
+        format.json
+      end
     else
       @messages = @group.messages.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'
       render :index
-      end
     end
   end
-
 
 private
 
@@ -38,4 +29,5 @@ private
   def set_group
     @group = Group.find(params[:group_id])
   end
+
 end
