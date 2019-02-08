@@ -1,5 +1,5 @@
 .chatMain__footer
-  = form_for [@group, @message], :html => {:class => "chatMain__footer--newMessage"} do |f|
+  = form_for [@group, @message], :html => {:class => "chatMain__footer--newMessage", :id => "newMessage"} do|f|
     .chatMain__footer--newMessage--body
       = f.text_field :content, id: 'messageBody', placeholder: 'type a message'
       = f.label :uploadIcon, class: 'chatMain__footer--newMessage--body--uploadLabel' do
