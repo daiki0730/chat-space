@@ -1,5 +1,5 @@
 $(function () {
-  function buildHTML(message) {
+  function constructHTML(message) {
 
     var image_html = "";
     if (message.image_present) {
@@ -31,7 +31,7 @@ $(function () {
       contentType: false
     })
     .done(function (message) {
-      var html = buildHTML(message);
+      var html = constructHTML(message);
       $('.chatMain__body--list').append(html)
       $('#messageBody').val('')
       $('.chatMain__body').animate({
