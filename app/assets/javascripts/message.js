@@ -30,5 +30,8 @@ $(function () {
       $('.chatMain__body--list').append(html)
       $('#messageBody').val('')
     })
+      .fail(function () {
+        alert('error');
+      })
   });
 });
