@@ -17,7 +17,7 @@ $(function () {
                     ${image_html}</div></div>`;
     return html;
   }
-  $('.chatMain__footer--newMessage').submit(function (e) {
+  $('#newMessage').submit(function (e) {
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
