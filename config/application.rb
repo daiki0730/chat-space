@@ -8,7 +8,8 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
-   config.generators do |g|
+    config.action_view.automatically_disable_submit_tag = false
+    config.generators do |g|
       g.stylesheets false
       g.javascripts false
       g.helper false
