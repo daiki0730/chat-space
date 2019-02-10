@@ -1,5 +1,5 @@
 $(function () {
-  var member_list = $("#chat-group-users");
+  var member_list = $("#user-search-result");
   function appendMember(user) {
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${user.name}</p>
@@ -8,7 +8,10 @@ $(function () {
     member_list.append(html);
 }
 
-  $(".chat-group-form__input").on("keyup", function () {
+  $(document).click("user-search-add chat-group-user__btn chat-group-user__btn--add", function () {
+    $(this).remove();
+
+  $("#user-search-field").on("keyup", function () {
     var input = $("#user-search-field").val();
     debugger;
     $.ajax({
@@ -19,9 +22,8 @@ $(function () {
       },
       dataType: 'json'
     })
-      .done(function (users) {
+      .done(function (users){
         member_list.empty();
-        debugger;
         if (users.length !== 0) {
           users.forEach(function (user) {
             appendMember(user);
