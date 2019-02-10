@@ -23,6 +23,10 @@ $(function () {
     appendChatMember(user_name, user_id);
   });
 
+  $("#chat-group-users").on("click", ".chat-group-user", function () {
+    $(this).remove();
+  });
+
   $(".chat-group-form__input").on("keyup", function () {
     var input = $("#user-search-field").val();
     $.ajax({
