@@ -9,5 +9,11 @@ $(function () {
       },
       dataType: 'json'
     })
+    .done(function (message) {
+        var html = constructMessageHTML(message);
+      })
+      .fail(function () {
+        alert('error');
+      })
   });
 });
