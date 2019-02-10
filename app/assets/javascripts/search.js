@@ -19,12 +19,12 @@ $(function () {
   $("#user-search-result").on("click", ".chat-group-user__btn--add", function () {
     var user_name = $(this).data("user-name");
     var user_id = $(this).data("user-id");
-    $(this).parent().remove()
+    $(this).parent().remove();
     appendChatMember(user_name, user_id);
   });
 
-  $("#chat-group-users").on("click", ".chat-group-user", function () {
-    $(this).remove();
+  $("#chat-group-users").on("click", ".js-remove-btn", function () {
+    $(this).parent(".js-chat-member").remove()
   });
 
   $(".chat-group-form__input").on("keyup", function () {
