@@ -10,10 +10,11 @@ $(function () {
 
   $(document).click("user-search-add chat-group-user__btn chat-group-user__btn--add", function () {
     $(this).remove();
+    debugger;
+  });
 
   $("#user-search-field").on("keyup", function () {
     var input = $("#user-search-field").val();
-    debugger;
     $.ajax({
       type: 'GET',
       url: '/users',
