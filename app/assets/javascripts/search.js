@@ -1,6 +1,6 @@
 $(function () {
   var member_list = $("#user-search-result");
-  function appendMember(user) {
+  function appendGroupUser(user) {
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${user.name}</p>
                   <a class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</a>
@@ -42,7 +42,7 @@ $(function () {
         member_list.empty();
         if (users.length !== 0) {
           users.forEach(function (user) {
-            appendMember(user);
+            appendGroupUser(user);
           });
         }
       })
