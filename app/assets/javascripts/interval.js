@@ -28,7 +28,7 @@ var interval = setInterval(function () {
       url: location.href,
       type: 'GET',
       data: {
-      id: message_id
+        message_id = message_id,
       }
       dataType: 'json',
       processData: false
