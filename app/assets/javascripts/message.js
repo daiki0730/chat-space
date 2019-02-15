@@ -26,16 +26,16 @@ $(function () {
     var formData = new FormData(this);
     var url = $(this).attr('action');
     var href = window.location.href;
+
     $.ajax({
-      url: href,
-      type: "POST",
-      data: {
-      id: message_id
-    }
-      dataType: 'json',
-      processData: false,
-      contentType: false
-    })
+        url: href,
+        type: "POST",
+        data: formData,
+        dataType: 'json',
+        processData: false,
+        contentType: false
+      })
+
     .done(function (message) {
       var html = constructMessageHTML(message);
       $('.chatMain__body--list').append(html)
