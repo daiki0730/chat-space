@@ -11,12 +11,16 @@ $(function () {
                     ${message.user_name}
                   </div>
                   <div class='chatMain__body--list--message--time'>
-                    ${message.created_at}</div>
+                    ${message.created_at}
+                  </div>
                   <div class='chatMain__body--list--message--text'>
                     <p>${message.content}</p>
-                    ${image_html}</div></div>`;
+                    ${image_html}
+                  </div>
+                </div>`;
     return html;
-  }
+  };
+
   $('#newMessage').submit(function (e) {
     e.preventDefault();
     var formData = new FormData(this);
@@ -25,7 +29,9 @@ $(function () {
     $.ajax({
       url: href,
       type: "POST",
-      data: formData,
+      data: {
+      id: message_id
+    }
       dataType: 'json',
       processData: false,
       contentType: false
@@ -33,13 +39,17 @@ $(function () {
     .done(function (message) {
       var html = constructMessageHTML(message);
       $('.chatMain__body--list').append(html)
+
       $('#messageBody').val('')
       $('.chatMain__body').animate({
         scrollTop: $('.chatMain__body')[0].scrollHeight
       }, 1000, 'swing');
     })
-      .fail(function () {
-        alert('error');
-      })
+    .fail(function () {
+      alert('error');
+    })
+    .always(function () {
+      $(".chatMain__footer--newMessage--submit").removeAttr("disabled");
+      });
   });
 });
