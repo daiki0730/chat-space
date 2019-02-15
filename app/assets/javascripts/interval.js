@@ -2,10 +2,7 @@ var interval = setInterval(function () {
   if (window.location.href.match(/\/groups\/\d+\/messages/)) {
 
     function constructMessageHTML(message) {
-      var image_html = "";
-      if (message.image["url"]) {
-        image_html = `<img src="${message.image.url}">`;
-      }
+      var image_html = (message.image["url"] !== null)?`<img src="${message.image.url}">` : '';
       var html = `<div class='chatMain__body--list--message' data-message-id = "${message.id}">
                     <div class='chatMain__body--list--message--name'>
                       ${message.user_name}
