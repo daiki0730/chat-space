@@ -25,9 +25,7 @@ var interval = setInterval(function () {
     $.ajax({
       url: location.href,
       type: 'GET',
-      data: {
-        id : message_id
-      },
+      data: (`id=${message_id}`),
       dataType: 'json',
       processData: false
     })
