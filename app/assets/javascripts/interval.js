@@ -21,7 +21,6 @@ var interval = setInterval(function () {
     if ($('.chatMain__body--list--message')[0]){
       message_id = $('.chatMain__body--list--message').last().data('message-id');
     }
-
     $.ajax({
       url: location.href,
       type: 'GET',
@@ -29,16 +28,16 @@ var interval = setInterval(function () {
       dataType: 'json',
       processData: false
     })
-      .done(function (messageDetail) {
-        $.each(messageDetail, function (i, messageDetail) {
-          var html = constructMessageHTML(messageDetail);
+      .done(function (data) {
+        $.each(data, function (i, data) {
+          var html = constructMessageHTML(data);
           $('.chatMain__body--list').append(html);
         });
         $('.chatMain__body').animate({
           scrollTop: $('.chatMain__body')[0].scrollHeight
         }, 1000, 'swing');
       })
-      .fail(function (messageDetail) {
+      .fail(function (data) {
         alert('自動更新に失敗しました');
       });
   } else {
