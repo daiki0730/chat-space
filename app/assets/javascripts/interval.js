@@ -28,16 +28,16 @@ var interval = setInterval(function () {
       dataType: 'json',
       processData: false
     })
-      .done(function (data) {
-        $.each(data, function (i, data) {
-          var html = constructMessageHTML(data);
+      .done(function (messageDetail) {
+        $.each(messageDetail, function (i, messageDetail) {
+          var html = constructMessageHTML(messageDetail);
           $('.chatMain__body--list').append(html);
         });
         $('.chatMain__body').animate({
           scrollTop: $('.chatMain__body')[0].scrollHeight
         }, 1000, 'swing');
       })
-      .fail(function (data) {
+      .fail(function (messageDetail) {
         alert('自動更新に失敗しました');
       });
   } else {
