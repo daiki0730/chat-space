@@ -21,6 +21,7 @@ var interval = setInterval(function () {
     if ($('.chatMain__body--list--message')[0]){
       message_id = $('.chatMain__body--list--message').last().data('message-id');
     }
+
     $.ajax({
       url: location.href,
       type: 'GET',
