@@ -1,1 +1,1 @@
-# config valid only for current version of Capistrano
+server '54.199.191.186', user: 'ec2-user', roles: %w{app db web}
