@@ -26,12 +26,6 @@ set :default_env, {
   AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"]
 }
 
-set :default_env, {
-  rbenv_root: "/usr/local/rbenv",
-  path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
-  DEVISE_SECRET_KEY: ENV["DEVISE_SECRET_KEY"]
-}
-
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
